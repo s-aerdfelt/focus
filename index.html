@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>focus detector</h1>
+<div>the title will change if you are focused on the website</div>
+</body>
+  <script>function handleVisibilityChange() {
+    if (document.hidden) {
+        document.title="come back :(";
+    } else {
+        document.title="hi! :)";
+    }
+}
+
+// Add event listeners for visibility changes
+document.addEventListener("visibilitychange", handleVisibilityChange)</script>
+</html>
